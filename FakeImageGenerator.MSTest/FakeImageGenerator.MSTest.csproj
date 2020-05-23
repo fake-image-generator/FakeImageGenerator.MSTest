@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+	<NuspecFile>FakeImageGenerator.MSTest.1.0.0.nuspec</NuspecFile>
+	<IsPackable>true</IsPackable>	
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FakeImageGenerator" Version="1.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
