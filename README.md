@@ -1,5 +1,5 @@
 # FakeImageGenerator.MSTest
-[![NuGet](https://img.shields.io/nuget/v/FakeImageGenerator.MSTest)](https://www.nuget.org/packages/FakeImageGenerator.MSTest/) [![Github Actions](https://img.shields.io/github/workflow/status/fake-image-generator/FakeImageGenerator.MSTest/.NET%20Core)]([https://github.com/fake-image-generator/FakeImageGenerator.MSTest/actions?query=workflow%3A%22.NET+Core%22](https://github.com/fake-image-generator/FakeImageGenerator.MSTest/actions?query=workflow%3A".NET+Core"))
+[![NuGet](https://img.shields.io/nuget/v/FakeImageGenerator.MSTest)](https://www.nuget.org/packages/FakeImageGenerator.MSTest/) [![Github Actions](https://img.shields.io/github/workflow/status/fake-image-generator/FakeImageGenerator.MSTest/.NET%20Core)](https://github.com/fake-image-generator/FakeImageGenerator.MSTest/actions?query=workflow%3A".NET+Core")
 
 
 
