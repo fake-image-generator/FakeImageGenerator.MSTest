@@ -1,13 +1,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace FakeImageGenerator.MSTest.Test
 {
     [TestClass]
     public class FakeImageGeneratorAttributeTest
     {
-        [DataTestMethod]
-        [FakeImageGeneratorAttribute(10000000, "Png", "C:/")]
+        [TestMethod]
+#if _WINDOWS
+        [FakeImageGenerator(10000000, "Png", "C:/")]
+#else
+        [FakeImageGenerator(10000000, "Png", "/home/runner/work/FakeImageGenerator.MSTest/")]
+#endif
         public void GenerateFakeImageWithOutputPathShouldBeOk(string path)
         {
             var file = new FileInfo(path);
@@ -16,8 +21,8 @@ namespace FakeImageGenerator.MSTest.Test
             Assert.AreEqual(".png", file.Extension);
         }
 
-        [DataTestMethod]
-        [FakeImageGeneratorAttribute(10000000, "Png")]
+        [TestMethod]
+        [FakeImageGenerator(10000000, "Png")]
         public void GenerateFakeImageWithoutOutputPathShouldBeOk(byte[] array)
         {
             Assert.AreEqual(10000000, array.Length);
